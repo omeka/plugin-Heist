@@ -46,6 +46,7 @@ class HeistPlugin extends Omeka_Plugin_AbstractPlugin
         $apiResources['heist'] = array(
             'record_type' => 'Heist',
             'actions' => array('index', 'get', 'post', 'put', 'delete'),
+            'index_params' => array('id', 'pairing_id', 'device_id'),
         );
         return $apiResources;
     }
